@@ -15,5 +15,17 @@ public class GreenApple extends Actor
     public void act()
     {
         // Add your action code here.
+      move(-5);
+        
+        if(getX() <= 0) {
+            resetGreenApple();
+        }
+        
+        if(isTouching(Hero.class)){
+            getWorld().removeObject(this);
+        }
+    }
+        public void resetGreenApple() {
+            int num = Greenfoot.getRandomNumber(2);
     }
 }
