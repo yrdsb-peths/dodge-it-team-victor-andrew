@@ -9,5 +9,6 @@ public class MyWorld extends World {
         
         GreenApple greenApple = new GreenApple();
         addObject(greenApple, 300, 300);
+        
     }
 }
